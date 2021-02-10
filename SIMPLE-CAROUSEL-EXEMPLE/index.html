@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Exemple | Simple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+
+
+    <style>
+        body{
+            background-color: #333;
+        }
+        .container{
+            width:90%;
+            margin:2% auto;
+        }
+        .carousel img{
+            width:100%;
+        }
+        .slick-prev{
+       
+            display: block;
+            border: 0.06666em solid #bdb6b6;
+            font-size: 2em;
+            background: rgba(255,255,255,0.23);
+            /*color: rgb(248, 248, 248);*/
+            cursor: pointer;
+            transition: .3s background;
+            line-height: 0.8em;
+            height: 1.3em;
+            width: 1.3em;
+            border-radius: 0.3em;
+            position: absolute;
+            color:transparent;
+            opacity: .7;
+            right: -5em;
+            top: 40%;
+            margin-left:-20px;
+        }
+        .slick-prev:before, .slick-next:before{
+            font-family: 'slick';
+            font-size: 28px;
+            line-height: 1.5;
+            opacity: .75;
+            margin-left: 4px;
+        }
+        .slick-next{
+            display: block;
+            font-size: 2em;
+            line-height: 0.8em;
+            position: absolute;
+            background: rgba(255,255,255,0.23);
+            color: #fff;
+            cursor: pointer;
+            transition: .3s background;
+            top: 40%;
+            height: 1.3em;
+            width: 1.3em;
+            border-radius: 0.3em;
+            border: 0.06666em solid #bdb6b6;
+            color:transparent;
+            opacity: .7;
+            color: transparent;
+            margin-right:-20px;
+        }
+        .container-two{
+            width:90%;
+            margin:2% auto;
+        }
+        /*
+        HW1: Using custom -> prev/next -> x3 x4 bigger
+        color/shape
+        */
+    </style>
+
+</head>
+<body>
+    <section class="container">
+        <div class="carousel">
+            <div>
+                <img src="img/img1.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/img2.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/img3.jpg" alt="">
+            </div>
+          </div>
+    </section>
+
+    <!--HW2: choose from the 4 resources another-->
+    <section class="container-two">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <h4> 1</h4>
+                <img src="img/img1.jpg" alt=""> 
+            </div>
+            <div class="item">
+                <h4>2</h4>
+                <img src="img/img2.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>3</h4>
+                <img src="img/img3.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>4</h4>
+                <img src="img/img1.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>5</h4>
+                <img src="img/img2.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>6</h4>
+                <img src="img/img3.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>7</h4>
+                <img src="img/img1.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>8</h4>
+                <img src="img/img2.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>9</h4>
+                <img src="img/img3.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>10</h4>
+                <img src="img/img1.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>11</h4>
+                <img src="img/img2.jpg" alt="">
+            </div>
+            <div class="item">
+                <h4>12</h4>
+                <img src="img/img3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.carousel').slick({});
+        });
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+         })
+    </script>
+</body>
+</html>
